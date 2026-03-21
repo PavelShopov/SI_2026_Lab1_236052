@@ -1,0 +1,90 @@
+git init
+git status
+On branch master
+
+No commits yet
+
+~/School/SI/SI_2026_Lab1_236052$ git remote add origin git@github.com:PavelShopov/SI_2026_Lab1_236052.git
+
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ ls
+README.md
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ git add .
+git commit -m "initial commit"
+
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ git push origin master
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ED25519 key fingerprint is ************.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enter passphrase for key '/home/pilot17/.ssh/id_ed25519': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 250 bytes | 250.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:PavelShopov/SI_2026_Lab1_236052.git
+ * [new branch]      master -> master
+
+
+
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ mv ~/Downloads/* .
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ ls	
+README.md  SI2026Lab1Main.java
+
+git commit -m "Add starter code"
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ git push origin master
+
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ git checkout -b feature-search-books
+Switched to a new branch 'feature-search-books'
+
+implementirav promeni vo kodot
+
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ git push origin feature-search-books 
+za da sinhroniziram grankata so remote repoto
+
+git checkout master
+
+git merge feature-search-books
+
+iskoristena e fast forward tehnika zatoa shto na master ne postojat novi komiti napred, ni pa konflikti.
+
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ git log --oneline --graph --all
+* 6ea1592 (HEAD -> master, origin/feature-search-books, feature-search-books) Implement book search
+* 1733824 (origin/master, origin/HEAD) Add starter code
+* fe36151 Initial commit
+
+
+git branch feature-borrow-book
+
+git branch feature-genre-report
+
+git checkout feature-genre-report
+
+		
+Znachi od koga gi sozdadov dvete granki so git checkout gi posetiv gi napraviv baranite promeni. sekoja granka posebno. git add . na promenite i git commit -m so soodvetnoto ime. 
+
+
+gi sinhronizirav so remote repoto i sozdadov pull request.
+
+feature borrow book uspeshno beshe mergnata so recursive, zatao shto imashe konflikt . 
+feature-genre-report imashe konflikti isto so recursive, 
+
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ git checkout feature-borrow-book 
+Switched to branch 'feature-borrow-book'
+pilot17@patnik:~/School/SI/SI_2026_Lab1_236052$ git merge master
+Updating 334e2b3..fa9e57c
+Fast-forward
+ .ai/mcp/mcp.json    | 0
+ SI2026Lab1Main.java | 7 ++++---
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+ create mode 100644 .ai/mcp/mcp.json
+
+
+ git status
+On branch feature-borrow-book
+nothing to commit, working tree clean
+
+
+
+

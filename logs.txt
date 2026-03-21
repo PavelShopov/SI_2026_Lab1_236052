@@ -1,0 +1,19 @@
+*   fa9e57c Merge branch 'master' of github.com:PavelShopov/SI_2026_Lab1_236052
+|\  
+| *   cb43add Merge pull request #2 from PavelShopov/feature-genre-report
+| |\  
+| | *   7f6498b Merge branch 'master' into feature-genre-report
+| | |\  
+| | |/  
+| |/|   
+| * |   03271a3 Merge pull request #1 from PavelShopov/feature-borrow-book
+| |\ \  
+| | * | 334e2b3 Implement borrow book
+| |/ /  
+| | * 143e74b Implement genre report
+| |/  
+* / 094c8ee Update borrow message
+|/  
+* 6ea1592 Implement book search
+* 1733824 Add starter code
+* fe36151 Initial commit
