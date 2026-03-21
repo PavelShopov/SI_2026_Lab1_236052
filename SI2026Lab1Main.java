@@ -53,7 +53,7 @@ class Library {
 
     // TODO: Implement in branch feature-search-books
     public boolean searchBookByTitle(String title) {
-        return false;
+        return books.stream().anyMatch(b-> b.getTitle().equalsIgnoreCase(title));
     }
 
     // TODO: Implement in branch feature-borrow-book
@@ -119,6 +119,11 @@ public class SI2026Lab1Main {
         library.addBook(new Book("The Hobbit", "J.R.R. Tolkien", "Fantasy"));
         library.addBook(new Book("1984", "George Orwell", "Dystopian"));
 
+        System.out.println( library.searchBookByTitle("Clean Code"));
+        System.out.println( library.searchBookByTitle("Effective java"));
+        System.out.println( library.searchBookByTitle("Nepostoi"));
+
+        
         System.out.println("Library initialized.");
     }
 }
