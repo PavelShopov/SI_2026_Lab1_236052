@@ -51,7 +51,6 @@ class Library {
         books.add(book);
     }
 
-    // TODO: Implement in branch feature-search-books
     public boolean searchBookByTitle(String title) {
         return books.stream().anyMatch(b-> b.getTitle().equalsIgnoreCase(title));
     }
@@ -62,7 +61,7 @@ class Library {
             if (book.getTitle().equalsIgnoreCase(title)) {
                 if (!book.isBorrowed()) {
                     book.setBorrowed(true);
-                    System.out.println("Book borrowed.");
+                    System.out.println("Borrowed successfully");
                 } else {
                     System.out.println("Book is already borrowed.");
                 }
